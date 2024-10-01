@@ -1,4 +1,4 @@
-# week_3
+# Flutter Basics Widgets
 
 A new Flutter project.
 
