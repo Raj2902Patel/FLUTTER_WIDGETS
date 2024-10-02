@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:week_3/pages/expandable_listview.dart';
 
 class ListViewSeparatedPage extends StatefulWidget {
   const ListViewSeparatedPage({super.key});
@@ -89,7 +90,14 @@ class _ListViewSeparatedPageState extends State<ListViewSeparatedPage> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ExpandableListviewPage(),
+            ),
+          );
+        },
         child: const Icon(Icons.menu),
       ),
     );
