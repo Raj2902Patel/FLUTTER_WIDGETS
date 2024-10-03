@@ -71,7 +71,7 @@ class CardPage extends StatelessWidget {
             ),
           );
         },
-        child: const Icon(Icons.flight),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }
