@@ -11,24 +11,24 @@ class ListviewBuilderPage extends StatefulWidget {
 
 class _ListviewBuilderPageState extends State<ListviewBuilderPage> {
   var dataMap = {
-    "Believe you can and you're halfway there": "The first step to success",
-    "Shoot for the moon. Even if you miss, you'll land among the stars":
-        "Set no limits",
-    "Challenges are what make life interesting and overcoming them is what makes life meaningful":
-        "Growth happens in discomfort",
-    "It does not matter how slowly you go as long as you do not stop":
-        "Never give up",
-    "Don't limit your challenges. Challenge your limits":
-        "Break through your own barriers",
-    "Success is not final, failure is not fatal: It is the courage to continue that counts":
-        "Learn from mistakes",
-    "The ones who are crazy enough to think they can change the world, are the ones that do":
-        "Keep learning and growing",
-    "The journey of a thousand miles begins with one step":
-        "Move forward, one step at a time",
-    "Your attitude, not your aptitude, will determine your altitude":
-        "Mindset is everything",
-    "What you do today can improve all your tomorrows": "The present is a gift",
+    "The first step to success": "Believe you can and you're halfway there",
+    "Set no limits":
+        "Shoot for the moon. Even if you miss, you'll land among the stars",
+    "Growth happens in discomfort":
+        "Challenges are what make life interesting and overcoming them is what makes life meaningful",
+    "Never give up":
+        "It does not matter how slowly you go as long as you do not stop",
+    "Break through your own barriers":
+        "Don't limit your challenges. Challenge your limits",
+    "Learn from mistakes":
+        "Success is not final, failure is not fatal: It is the courage to continue that counts",
+    "Keep learning and growing":
+        "The ones who are crazy enough to think they can change the world, are the ones that do",
+    "Move forward, one step at a time":
+        "The journey of a thousand miles begins with one step",
+    "Mindset is everything":
+        "Your attitude, not your aptitude, will determine your altitude",
+    "The present is a gift": "What you do today can improve all your tomorrows",
   };
 
   @override
@@ -59,7 +59,7 @@ class _ListviewBuilderPageState extends State<ListviewBuilderPage> {
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
-                      fontWeight: FontWeight.w300,
+                      fontWeight: FontWeight.w800,
                     ),
                   ),
                   subtitle: Text(
@@ -67,7 +67,7 @@ class _ListviewBuilderPageState extends State<ListviewBuilderPage> {
                     style: const TextStyle(
                       color: Colors.black,
                       fontSize: 18,
-                      fontWeight: FontWeight.w700,
+                      fontWeight: FontWeight.w400,
                     ),
                   ),
                   leading: const Icon(

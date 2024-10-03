@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:week_3/pages/staggered_gridview/staggered_widget.dart';
 
 class GridviewExtentPage extends StatelessWidget {
   GridviewExtentPage({super.key});
@@ -42,6 +43,17 @@ class GridviewExtentPage extends StatelessWidget {
         mainAxisSpacing: 10,
         crossAxisSpacing: 10,
         children: gridItem,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const StaggeredPage(),
+            ),
+          );
+        },
+        child: const Icon(Icons.arrow_circle_right),
       ),
     );
   }
