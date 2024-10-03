@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'expandable_listview_builder.dart';
-import 'expandable_listview_separated.dart';
 
 class ExpandableListviewPage extends StatefulWidget {
   const ExpandableListviewPage({super.key});
@@ -103,7 +102,7 @@ class _ExpandableListviewPageState extends State<ExpandableListviewPage> {
               MaterialPageRoute(
                   builder: (context) => const ExpandableListviewBuilderPage()));
         },
-        child: const Icon(Icons.menu),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

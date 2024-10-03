@@ -36,7 +36,7 @@ class _StackTaskPageState extends State<StackTaskPage> {
                       color: Colors.black.withOpacity(0.5),
                     ),
                     Icon(
-                      Icons.account_balance_wallet_outlined,
+                      Icons.arrow_circle_right_outlined,
                       size: 40,
                       color: Colors.black.withOpacity(0.5),
                     ),
@@ -59,14 +59,21 @@ class _StackTaskPageState extends State<StackTaskPage> {
                 alignment: Alignment.center,
                 child: Padding(
                   padding: const EdgeInsets.only(top: 280),
-                  child: OutlinedButton(
+                  child: OutlinedButton.icon(
+                    style: ButtonStyle(
+                      padding: WidgetStateProperty.all(
+                        const EdgeInsets.symmetric(
+                            horizontal: 20, vertical: 15),
+                      ),
+                    ),
+                    icon: const Icon(Icons.arrow_circle_right_outlined),
                     onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => const CardPage()));
                     },
-                    child: const Text(
+                    label: const Text(
                       "Next Page!",
                       style: TextStyle(
                           color: Colors.black,

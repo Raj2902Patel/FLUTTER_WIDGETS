@@ -118,7 +118,7 @@ class SinglechildscrollviewPage extends StatelessWidget {
             MaterialPageRoute(builder: (context) => const TextPage()),
           );
         },
-        child: const Icon(Icons.flight),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

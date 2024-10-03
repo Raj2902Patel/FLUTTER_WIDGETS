@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:week_3/pages/list_view.dart';
+import 'package:week_3/pages/list_view/list_view.dart';
 
 class FlexPage extends StatelessWidget {
   const FlexPage({super.key});
@@ -61,7 +61,7 @@ class FlexPage extends StatelessWidget {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => const ListviewPage()));
         },
-        child: const Icon(Icons.flight),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

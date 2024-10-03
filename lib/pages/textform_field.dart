@@ -6,8 +6,8 @@ class TextFieldPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController _emailController = TextEditingController();
-    final TextEditingController _passwordController = TextEditingController();
+    final TextEditingController emailController = TextEditingController();
+    final TextEditingController passwordController = TextEditingController();
 
     return Scaffold(
       appBar: AppBar(
@@ -17,13 +17,13 @@ class TextFieldPage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Container(
+        child: SizedBox(
           width: 300,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextField(
-                controller: _emailController,
+                controller: emailController,
                 keyboardType: TextInputType.emailAddress,
                 // enabled: false,
                 decoration: InputDecoration(
@@ -59,7 +59,7 @@ class TextFieldPage extends StatelessWidget {
                 height: 20,
               ),
               TextField(
-                controller: _passwordController,
+                controller: passwordController,
                 obscureText: true,
                 obscuringCharacter: "*",
                 // enabled: false,
@@ -97,13 +97,13 @@ class TextFieldPage extends StatelessWidget {
               ),
               ElevatedButton(
                 onPressed: () {
-                  var v1 = _emailController.text;
-                  var v2 = _passwordController.text;
+                  var v1 = emailController.text;
+                  var v2 = passwordController.text;
 
                   print("Email Address -> $v1 & Password -> $v2");
 
-                  _emailController.clear();
-                  _passwordController.clear();
+                  emailController.clear();
+                  passwordController.clear();
                 },
                 child: const Text(
                   "Login",
@@ -127,7 +127,7 @@ class TextFieldPage extends StatelessWidget {
             ),
           );
         },
-        child: const Icon(Icons.flight),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

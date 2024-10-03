@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:week_3/pages/listview_builder.dart';
+import 'package:week_3/pages/list_view/listview_builder.dart';
 
 class ListviewPage extends StatelessWidget {
   const ListviewPage({super.key});
@@ -155,7 +155,7 @@ class ListviewPage extends StatelessWidget {
                 builder: (context) => const ListviewBuilderPage()),
           );
         },
-        child: const Icon(Icons.flight),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

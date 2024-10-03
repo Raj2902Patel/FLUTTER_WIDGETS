@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:week_3/pages/listview_separated.dart';
+
+import 'listview_separated.dart';
 
 class ListviewBuilderPage extends StatefulWidget {
   const ListviewBuilderPage({super.key});
@@ -87,7 +88,7 @@ class _ListviewBuilderPageState extends State<ListviewBuilderPage> {
               MaterialPageRoute(
                   builder: (context) => const ListViewSeparatedPage()));
         },
-        child: const Icon(Icons.menu),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

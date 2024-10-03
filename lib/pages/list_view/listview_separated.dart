@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:week_3/pages/expandable_listview.dart';
+import 'package:week_3/pages/list_view/expandable_listview.dart';
 
 class ListViewSeparatedPage extends StatefulWidget {
   const ListViewSeparatedPage({super.key});
@@ -98,7 +98,7 @@ class _ListViewSeparatedPageState extends State<ListViewSeparatedPage> {
             ),
           );
         },
-        child: const Icon(Icons.menu),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

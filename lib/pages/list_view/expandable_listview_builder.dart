@@ -66,7 +66,7 @@ class _ExpandableListviewBuilderPageState
                 Text(
                   textAlign: TextAlign.center,
                   subtitle,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.purpleAccent,
                     fontSize: 18,
                     fontWeight: FontWeight.w400,
@@ -82,11 +82,11 @@ class _ExpandableListviewBuilderPageState
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => ExpandableListviewSeparatedPage(),
+              builder: (context) => const ExpandableListviewSeparatedPage(),
             ),
           );
         },
-        child: const Icon(Icons.menu),
+        child: const Icon(Icons.arrow_circle_right_outlined),
       ),
     );
   }

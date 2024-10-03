@@ -44,7 +44,8 @@ class _ImagePageState extends State<ImagePage> {
             const SizedBox(
               height: 20,
             ),
-            OutlinedButton(
+            OutlinedButton.icon(
+              icon: const Icon(Icons.arrow_circle_right_outlined),
               style: OutlinedButton.styleFrom(
                 backgroundColor: Colors.blueGrey.withOpacity(0.2),
               ),
@@ -56,7 +57,7 @@ class _ImagePageState extends State<ImagePage> {
                   ),
                 );
               },
-              child: const Text(
+              label: const Text(
                 "HERO WIDGETS",
                 style: TextStyle(
                     color: Colors.black,

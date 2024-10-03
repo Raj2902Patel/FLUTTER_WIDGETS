@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-
-import 'expandable_listview_builder.dart';
+import 'package:week_3/pages/grid_view/girdview_builder.dart';
 
 class ExpandableListviewSeparatedPage extends StatefulWidget {
-  ExpandableListviewSeparatedPage({super.key});
+  const ExpandableListviewSeparatedPage({super.key});
 
   @override
   State<ExpandableListviewSeparatedPage> createState() =>
@@ -70,6 +69,19 @@ class _ExpandableListviewSeparatedPageState
           );
         },
         itemCount: categories.length,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const GirdviewBuilderPage(),
+            ),
+          );
+        },
+        child: const Icon(
+          Icons.arrow_circle_right_outlined,
+        ),
       ),
     );
   }
